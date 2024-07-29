@@ -94,6 +94,14 @@ nav ul li a:hover {
     }
 } */
 
+#mascot {
+    top: 250px;
+    right: 20px;
+    position: fixed;
+    z-index: 1000;
+    width: 10%;
+}
+
 body {
     background-image: url('images/body-background_waifu2x_3x_3n_jpg.png');
     background-size: cover; /* Cover the entire page */
@@ -102,26 +110,31 @@ body {
 }
 
 #news {
+    padding-top: 80px;
     background-color: #fcfcf0; /* Light grey background */
     padding: 20px; /* Add some padding */
 }
 
 #robots {
+    padding-top: 80px;
     background-color: #fcfcf0; /* Light grey background */
     padding: 20px; /* Add some padding */
 }
 
 #members {
+    padding-top: 80px;
     background-color: #fcfcf0; /* Slightly darker grey */
     padding: 20px;
 }
 
 #galleries {
+    padding-top: 80px;
     background-color: #fcfcf0; /* Slightly darker grey */
     padding: 20px;
 }
 
 #about {
+    padding-top: 80px;
     background-color: #fcfcf0; /* Even darker grey */
     padding: 20px;
 }
@@ -131,4 +144,6 @@ section {
     border-radius: 5px;
     padding: 10px;
     margin: 20px;
+    margin-left: 180px;
+    margin-right: 180px;
 }

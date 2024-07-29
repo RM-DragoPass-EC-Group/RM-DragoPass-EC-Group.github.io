@@ -28,12 +28,16 @@ window.addEventListener('resize', function() {
 window.addEventListener('scroll', function() {
     const navBar = document.getElementById('navBar'); // Replace 'navBar' with the actual ID of your navigation bar
     const scrollThreshold = 162; // Change this value based on when you want the nav bar to become fixed
+    const mascot = this.document.getElementById('mascot');
+    const pageHeight = document.body.scrollHeight;
 
     if (window.scrollY > scrollThreshold) {
         navBar.classList.add('follow');
     } else {
         navBar.classList.remove('follow');
     }
+
+    mascot.style.transform = 'translateY(' + (400*window.scrollY/pageHeight) + 'px)';
 });
 
 // Trigger the resize event on page load to apply the settings initially
