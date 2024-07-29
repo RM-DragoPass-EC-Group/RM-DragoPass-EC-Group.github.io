@@ -5,20 +5,23 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
-    color: white;
+    background-image: url('images/header-background.png');
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Centers the image */
+    color: white; /* Ensures text is readable over the image */
     text-align: left; /* Align text to the left */
-    padding: 10px 20px;
+    padding: 20px; /* Add padding to create space inside the header */
     display: flex; /* Use flexbox to align items */
     align-items: center; /* Center items vertically */
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     z-index: 1000; /* Ensure it stays on top */
 }
 
 #logo {
-    max-width: 50px; /* Adjust size as needed */
-    margin-right: 20px; /* Space between logo and text */
+    max-width: 120px; /* Adjust size as needed */
+    margin-left: 220px; /* Space on the left of logo */
+    /*margin-right: 40px; /* Space between logo and text */
 }
 
 header h1 {
@@ -26,21 +29,101 @@ header h1 {
     font-size: 24px; /* Adjust size as needed */
 }
 
+.follow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1001; /* Ensure it stays above other content */
+}
+
+nav {
+    background-color: #fff; /* Optional background for nav */
+    border-top: 5px solid #822776; /* Optional top border in theme color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for nav */
+    padding: 10px 0; /* Increase padding to make nav bar thicker */
+    /* position: fixed; */
+    width: 100%;
+    /*z-index: 1001; /* Ensure it stays above other content */
+    justify-content: flex-end;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
-    text-align: center;
     margin: 0;
+    text-align: right;
+    display: flex;
+    justify-content: right;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 20px; /* Adjust spacing between links */
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #4CAF50;
+    color: #822776;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    background-color: #be7fb6; /* Background change on hover */
+    border-radius: 5px; /* Optional rounded corners */
+}
+
+/* @media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 18px;
+    }
+
+    #logo {
+        max-width: 40px;
+    }
+} */
+
+body {
+    background-image: url('images/body-background_waifu2x_3x_3n_jpg.png');
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed;
+}
+
+#news {
+    background-color: #fcfcf0; /* Light grey background */
+    padding: 20px; /* Add some padding */
+}
+
+#robots {
+    background-color: #fcfcf0; /* Light grey background */
+    padding: 20px; /* Add some padding */
+}
+
+#members {
+    background-color: #fcfcf0; /* Slightly darker grey */
+    padding: 20px;
+}
+
+#galleries {
+    background-color: #fcfcf0; /* Slightly darker grey */
+    padding: 20px;
+}
+
+#about {
+    background-color: #fcfcf0; /* Even darker grey */
+    padding: 20px;
 }
 
 section {
