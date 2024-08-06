@@ -76,24 +76,6 @@ nav ul li a:hover {
     border-radius: 5px; /* Optional rounded corners */
 }
 
-/* @media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    header h1 {
-        font-size: 18px;
-    }
-
-    #logo {
-        max-width: 40px;
-    }
-} */
-
 #mascot {
     top: 250px;
     right: 20px;

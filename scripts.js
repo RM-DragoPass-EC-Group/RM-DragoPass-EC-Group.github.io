@@ -27,7 +27,7 @@ window.addEventListener('resize', function() {
 
 window.addEventListener('scroll', function() {
     const navBar = document.getElementById('navBar'); // Replace 'navBar' with the actual ID of your navigation bar
-    const scrollThreshold = 162; // Change this value based on when you want the nav bar to become fixed
+    const scrollThreshold = 161; // Change this value based on when you want the nav bar to become fixed
     const mascot = this.document.getElementById('mascot');
     const pageHeight = document.body.scrollHeight;
 
